@@ -1,8 +1,9 @@
 /**
- * Write a description of class SumOfInput here.
+ * Takes an Integer input and sums up all the integers from 1 to the input.  
+ * It then returns that sum.  
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Chris Farmer
+ * @version Version 1.1
  */
 public class SumOfInput
 {
@@ -19,7 +20,10 @@ public class SumOfInput
     }
     
     public Integer oneToNumber(Integer numberToSum){
-
+        Integer sum = 0;
+        for (int i = 1; i <= numberToSum; i++) {
+            sum += i;
+        }
         return sum;
     }
 
